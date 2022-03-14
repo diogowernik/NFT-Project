@@ -1,25 +1,33 @@
-# `ethereum-boilerplate-NFT-Marketplace`
+# `ethereum-NFT-Marketplace`
 
-This Project is a fork of Ethereum Boilerplate and demostrates how you can build your own NFT Marketplace. This project of course work on any EVM-compatible blockchain such as Polygon, Avalanche, Binance Smart Chain and other such chains.
+#  `UI-UX`:
+- Press on mint button on the website
+- Connect wallet
+- Examine if wallet is on white list
+- If yes, allow mint of up to 5 NFTs (if stage 1, if stage 2 up to 3, if stage 3, up to 2)
+- If mint, transfer a random NFT picture from 0x000 wallet of the smart contract to wallet of minter.
+- Update white list, that wallet has minted x amount of NFTs.
 
-![Preview](preview.gif)
+# `Smart-Contract`
+- Name: SuperCarClub Lamborghini Edition
+- 8888 NFTs
+- every buyer gets the ownership over 1 NFT picture
+- 3 Sale Stages:
+o 1. Stage 1000 NFT price: 0.08 ETH per NFT
+  ROYALTIES 10%
+  Whitelist of 1000 people who can mint. Whitelist contains wallets. Should con
+  Can mint up to 5 per wallet
+o 2. Stage 3444 NFT price: 0.15 ETH per NFT
+  Can mint up to 3 per wallet
+o 3. Stage 4444 NFT price: 0.23 ETH per NFT
+  Can mint up to 2 per wallet
+- Switch from stage to stage is manual, done by us (holder of a wallet, or software developer) or when the number of mintable NFTs in that stage ends (stage 1 after 1000 are minted).
+- exclusive access to Video game - connected to the purchase of one NFT – the buyer of an NFT receives a number/code for exclusive access.
+- exclusive access to a website only for NFT holders.
+- Should be done via a custom erc721 contract https://www.erc721a.org
 
-# ⭐️ `Star us`
-If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
 
-# 🚀 Quick Start
 
-📄 Clone or fork `ethereum-nft-marketplace-boilerplate`:
-```sh
-git clone https://github.com/ethereum-boilerplate/ethereum-nft-marketplace-boilerplate.git
-```
-💿 Install all dependencies:
-```sh
-cd ethereum-nft-marketplace-boilerplate
-yarn install 
-```
-✏ Rename `.env.example` to `.env` in the main folder and provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)) 
-Example:
 ```jsx
 REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
 REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
