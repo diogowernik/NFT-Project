@@ -9,6 +9,7 @@
 - Update white list, that wallet has minted x amount of NFTs.
 
 # `Smart-Contract`
+
 - Name: SuperCarClub Lamborghini Edition
 - 8888 NFTs
 - every buyer gets the ownership over 1 NFT picture
@@ -25,8 +26,10 @@ o 3. Stage 4444 NFT price: 0.23 ETH per NFT
 - exclusive access to Video game - connected to the purchase of one NFT – the buyer of an NFT receives a number/code for exclusive access.
 - exclusive access to a website only for NFT holders.
 - Should be done via a custom erc721 contract https://www.erc721a.org
+- ERC721A github for the contract: https://github.com/chiru-labs/ERC721A
 
 
+.env
 
 ```jsx
 REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
